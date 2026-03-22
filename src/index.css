@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --color-on-tertiary-fixed-variant: #48473f;
+  --color-on-secondary: #ffffff;
+  --color-on-tertiary-container: #fffbff;
+  --color-surface-variant: #e8e2d9;
+  --color-primary-fixed-dim: #baccae;
+  --color-primary-fixed: #d6e8c9;
+  --color-surface-bright: #fff8f0;
+  --color-primary-container: #697960;
+  --color-on-error: #ffffff;
+  --color-inverse-on-surface: #f6f0e7;
+  --color-secondary-container: #fd9a75;
+  --color-on-background: #1d1b16;
+  --color-secondary-fixed-dim: #ffb59b;
+  --color-on-error-container: #93000a;
+  --color-tertiary-fixed: #e6e2d7;
+  --color-background: #fff8f0;
+  --color-on-secondary-fixed-variant: #783115;
+  --color-tertiary-fixed-dim: #cac6bc;
+  --color-on-surface: #1d1b16;
+  --color-surface-container: #f3ede4;
+  --color-on-primary-fixed: #111f0c;
+  --color-surface-container-highest: #e8e2d9;
+  --color-primary: #516048;
+  --color-surface-container-lowest: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-outline: #757870;
+  --color-on-surface-variant: #444841;
+  --color-inverse-primary: #baccae;
+  --color-surface-container-high: #ede7df;
+  --color-on-primary-fixed-variant: #3c4b34;
+  --color-on-primary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-fixed: #1c1c15;
+  --color-tertiary: #5e5c54;
+  --color-on-secondary-fixed: #380d00;
+  --color-on-secondary-container: #763014;
+  --color-error: #ba1a1a;
+  --color-surface-container-low: #f9f3ea;
+  --color-surface: #fff8f0;
+  --color-tertiary-container: #77756c;
+  --color-secondary: #96482a;
+  --color-on-primary-container: #f8ffef;
+  --color-surface-dim: #dfd9d1;
+  --color-inverse-surface: #33302b;
+  --color-surface-tint: #53634b;
+  --color-outline-variant: #c4c8be;
+  --color-secondary-fixed: #ffdbcf;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+}
+
+.botanical-shadow {
+  box-shadow: 0 12px 32px -4px rgba(51, 48, 43, 0.06);
+}
